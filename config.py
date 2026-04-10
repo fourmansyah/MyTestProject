@@ -13,7 +13,7 @@ from osu_diffusion.config import DiffusionTrainConfig
 
 @dataclass
 class InferenceConfig:
-    model_path: str = ''  # Path to trained model
+    model_path: str = 'OliBomby/Mapperatorinator-v31'  # Path to trained model
     audio_path: Optional[str] = None  # Path to input audio
     output_path: Optional[str] = None  # Path to output directory
     beatmap_path: Optional[str] = None  # Path to .osu file to autofill metadata and use as reference
