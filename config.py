@@ -8,6 +8,47 @@ from osuT5.osuT5.config import TrainConfig
 from osuT5.osuT5.tokenizer import ContextType
 from osu_diffusion.config import DiffusionTrainConfig
 
+# BeatHeritage V1 Config Sections
+
+@dataclass
+class AdvancedFeaturesConfig:
+    enable_context_aware_generation: bool = True
+    enable_style_preservation: bool = True
+    enable_difficulty_scaling: bool = True
+    enable_pattern_variety: bool = True
+
+@dataclass
+class QualityControlConfig:
+    min_distance_threshold: int = 20
+    max_overlap_ratio: float = 0.15
+    enable_auto_correction: bool = True
+    enable_flow_optimization: bool = True
+
+@dataclass
+class PerformanceConfig:
+    use_flash_attention: bool = False
+    batch_size: int = 1
+    max_sequence_length: int = 5120
+    cache_size: int = 4096
+
+@dataclass
+class MetadataConfig:
+    preserve_timing_points: bool = True
+    preserve_bookmarks: bool = True
+    auto_detect_kiai: bool = True
+    smart_hitsounding: bool = True
+
+@dataclass
+class PostprocessorConfig:
+    use_custom: bool = True
+    class_name: str = 'beatheritage_postprocessor.BeatHeritagePostprocessor'
+    config_class: str = 'beatheritage_postprocessor.BeatHeritageConfig'
+
+@dataclass
+class IntegrationsConfig:
+    mai_mod_enhanced: bool = True
+    fid_evaluation: bool = True
+    benchmark_mode: bool = False
 
 # Default config here based on V28
 
