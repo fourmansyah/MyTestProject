@@ -21,3 +21,4 @@ rich
 peft
 rosu-pp-py @ git+https://github.com/MaxOhn/rosu-pp-py.git
 yt-dlp
+torchaudio
