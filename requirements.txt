@@ -21,4 +21,3 @@ rich==14.2.0
 peft==0.18.1
 rosu-pp-py @ git+https://github.com/MaxOhn/rosu-pp-py.git
 yt-dlp
-hydra-core nnaudio
