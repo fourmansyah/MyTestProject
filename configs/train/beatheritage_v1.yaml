@@ -6,7 +6,6 @@ defaults:
 # Enhanced compilation and optimization settings
 compile: true              # PyTorch 2.0 optimization
 precision: 'bf16'          # Bfloat16 for better stability
-flash_attention: false      # Enable Flash Attention for better performance
 gradient_checkpointing: true  # New: Save memory during training
 
 data:                      # Enhanced data settings
