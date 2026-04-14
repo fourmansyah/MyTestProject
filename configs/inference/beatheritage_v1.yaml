@@ -41,7 +41,6 @@ quality_control:
   
 # Performance optimizations (new)
 performance:
-  use_flash_attention: false               # Enable if supported
   batch_size: 1                            # Inference batch size
   max_sequence_length: 5120                # Maximum sequence length
   cache_size: 4096                         # Context cache size
